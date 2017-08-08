@@ -5,7 +5,7 @@ Promises to serve files and resolves with the server itself so it can easily be 
 The promise is resolved once the server is up and running.
 
 Resolved object:
-```JS
+```JSON
 {
   server: <http server instance>,
   requests: [requests made],
@@ -45,7 +45,7 @@ beforeEach(() => {
   assets = await promiseAssets({ root: __dirname, port: 1337})
 })
 
-it('Should serve my asset', () => {
+it('Should serve my asset', await () => {
   request('http://localhost:1337/some_static_asset.txt')
     .then((result) => {
       console.log('Yeay my asset', result)
