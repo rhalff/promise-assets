@@ -34,11 +34,11 @@ const { server } = await promiseAssets({
 })
 
 server.close()
-```JS
+```
 
 ### Usage with Jest:
 
-```
+```JS
 let assets;
 
 beforeEach(() => {
