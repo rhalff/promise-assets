@@ -5,7 +5,7 @@ Promises to serve files and resolves with the server itself so it can easily be 
 The promise is resolved once the server is up and running.
 
 Resolved object:
-```
+```JS
 {
   server: <http server instance>,
   requests: [requests made],
@@ -13,7 +13,7 @@ Resolved object:
 }
 ```
 
-```
+```JS
 const promiseAssets = require('promise-assets')
 
 promiseAssets({
@@ -25,7 +25,7 @@ promiseAssets({
 })
 ```
 
-```
+```JS
 import promiseAssets from 'promise-assets'
 
 const { server } = await promiseAssets({
@@ -34,7 +34,7 @@ const { server } = await promiseAssets({
 })
 
 server.close()
-```
+```JS
 
 ### Usage with Jest:
 
