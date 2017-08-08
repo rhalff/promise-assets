@@ -41,11 +41,11 @@ server.close()
 ```JS
 let assets;
 
-beforeEach(() => {
+beforeEach(async () => {
   assets = await promiseAssets({ root: __dirname, port: 1337})
 })
 
-it('Should serve my asset', await () => {
+it('Should serve my asset', () => {
   request('http://localhost:1337/some_static_asset.txt')
     .then((result) => {
       console.log('Yeay my asset', result)
