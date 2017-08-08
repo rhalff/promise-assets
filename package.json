@@ -1,0 +1,15 @@
+{
+  "name": "promise-assets",
+  "version": "1.0.0",
+  "description": "Assets serving promise to be used within tests or for ad hoc file serving",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["static", "web", "server", "assets", "serve", "promise", "test"],
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ecstatic": "^2.2.1"
+  }
+}
